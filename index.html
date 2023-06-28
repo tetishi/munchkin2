@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').click(function() {
+                $('.line').toggleClass('active');
+                $('.container').toggleClass('active');
+                $('.gnav').toggle();
+
+                var speed = 1000;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('body, html').animate({scrollTop:position}, speed, 'swing');
+                       return false; 
+                    });
+
+                    $('.menu-btn').click(function() {
+                        $('.line').toggleClass('active');
+                        $('.container').toggleClass('active');
+                        $('.gnav').toggle();
+                    });
+                });
+        </script>
+        <script src="https://kit.fontawesome.com/fd3f7a3fac.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/munchkin.css">
+        <link rel="stylesheet" type="text/css" href="css/munchkinSp.css">
+        <link rel="stylesheet" type="text/css" href="css/munchkinIpad.css">
+        <title>MUNCHKIN</title>
+    </head>
+    <body>
+        <div class="all">
+        <header>
+            <div class="header-in">
+                <div class="container">
+                <div class="title">
+
+                    <div class="logo">
+                        <img class="pc-img" src="img/logo.svg">
+                        <img class="sp-img" src="img/logo.png">
+                    </div>
+                    
+                    <div class="menupc">
+                        <ul>
+                            <li><a href="#1">Skill</a></li>
+                            <li><a href="#2" >About</a></li>
+                            <li><a href="#3">Contact</a></li>
+                        </ul>
+                    </div>
+
+                <div class="menusp">
+                    <div class="menu-btn" id="menu-btn">
+                        <span class="line firstLine"></span>
+                        <span class="line secondLine"></span>
+                        <span class="line thirdLine"></span>
+                    </div>
+                    <nav class="gnav">
+                    <div class="nav-menu">
+                        <ul class="gnav-menu">
+                            <li class="gnav-item 1s"><a href="#1">Skill</a></li>
+                            <li class="gnav-item 2a"><a href="#2">About</a></li>
+                            <li class="gnav-item 3c"><a href="#3">Contact</a></li>
+                        </ul>
+                    </div>
+                    </nav>
+                    <!-- <div class="display"></div>                         -->
+                </div>
+
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="cover-img">
+                <img class="pc-img" src="img/cat-1.png">
+                <img class="sp-img" src="img/Mask Group 2.png">
+            </div>
+        </div>
+        
+        <div class="skill" id="1">
+            <div class="container">
+                <h1>Skill</h1>
+                <div class="skill-wrapper">
+                <div class="colum skill-colum1">
+                <img class="pc-img" src="img/cat-2.png">
+                <img class="sp-img" src="img/cat-2.png">
+                <p class="sleep">
+                    We sleep whenever we want. We sleep wherever<br class="brsp"> we<br class="brpc"> 
+                    want. All places can be our beds.<br>
+                    We sleep whenever we want. We sleep wherever<br class="brsp"> we<br class="brpc"> 
+                    want. All places can be our beds.<br>
+                    We sleep whenever we want. We sleep wherever<br class="brsp"> we<br class="brpc"> 
+                    want. All places can be our beds.
+                </p>
+            </div>
+            <div class="colum skill-colum2">
+                <p class="sleep2">
+                        We sleep whenever we want. We sleep wherever we <br>
+                        want. All places can be our beds.<br>
+                        We sleep whenever we want. We sleep wherever we <br>
+                        want. All places can be our beds.<br>
+                        We sleep whenever we want. We sleep wherever we <br>
+                        want. All places can be our beds.
+                    </p>
+                    <img class="pc-img" src="img/cat-3.png">
+                </div>
+                <div class="colum skill-colum2-sp">
+                        <img class="sp-img" src="img/cat-3.png">
+                        <p class="sleep2">
+                                We sleep whenever we want. We sleep wherever<br> we 
+                                want. All places can be our beds.<br>
+                                We sleep whenever we want. We sleep wherever<br> we 
+                                want. All places can be our beds.<br>
+                                We sleep whenever we want. We sleep wherever<br> we 
+                                want. All places can be our beds.
+                            </p>
+                        </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="about" id="2">
+            <div class="container">
+                <h1>About</h1>
+                <div class="about-wrapper">
+                    <div class="about-colum about-colum1">
+                        <img class="pc-img" src="img/cat-4.png">
+                        <img class="sp-img" src="img/cat-4.png">
+                        <p class="cute">
+                            We are cute. There is no doubt about this.<br>
+                            Nobody can't object to this fact.
+                        </p>
+                    </div>
+                    <div class="about-colum about-colum2">
+                            <img class="pc-img" src="img/cat-5.png">
+                            <img class="sp-img" src="img/cat-5.png">
+                            <p class="cute">
+                                We are cute. There is no doubt about this.<br>
+                                Nobody can't object to this fact.
+                            </p>
+                        </div>
+                </div>
+                <div class="btn-more">
+                <a class="btn1" href="#">MORE</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="contact" id="3">
+            <div class="container">
+                <h1>Contact</h1>
+                <div class="contact-wrapper">
+                    <div class="contact-colum contact-colum1">
+                        <img class="pc-img" src="img/マスクグループ 1.png">
+                        <img class="sp-img" src="img/Mask Group 1.png">
+                    </div>
+                    <div class="contact-colum contact-colum2">
+                        <p class="come">
+                            You can come to see me.
+                        </p>
+                        <div class="btn-map">
+                        <a class="btn2" href="#">MAP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>We are munchkin</p>
+        </footer>
+    </div>
+    </body>
+</html>
