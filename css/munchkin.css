@@ -52,13 +52,11 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-
 .menupc li {
   font-size: 18px;
   padding: 31px 0 31px 40px;
   line-height: 1;
 }
-
 .menupc li a {
   text-decoration: none;
   color: #642A0A;
@@ -98,27 +96,22 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
 .skill-wrapper .skill-colum1 {
   margin-top: 88px;
   margin-right: 90px;
 }
-
 .skill-wrapper .skill-colum1 img {
   margin-bottom: 74px;
 }
-
 .skill-wrapper .skill-colum1 p {
   margin-bottom: 234px;
   font-weight: 500;
   line-height: 1.69;
 }
-
 .skill-wrapper .skill-colum2 {
   margin-top: 84px;
   margin-left: 90px;
 }
-
 .skill-wrapper .skill-colum2 p {
   margin-bottom: 227px;
   font-weight: 500;
@@ -143,7 +136,6 @@ h1 {
   height: 710px;
   padding-top: 89px;
 }
-
 .about h1 {
   margin-bottom: 37px;
 }
@@ -167,7 +159,6 @@ h1 {
 .about-colum2 {
   margin-left: 87px;
 }
-
 .about-colum2 .cute {
   padding-right: 3px;
 }
@@ -183,7 +174,6 @@ h1 {
   background-color: #fff;
   border-radius: 25px;
 }
-
 .btn1:hover {
   background-color: #5F220F;
   color: #fff;
@@ -221,7 +211,6 @@ h1 {
 .btn-map {
   margin-top: 35px;
 }
-
 .btn-map .btn2 {
   width: 100px;
   height: 50px;
@@ -248,9 +237,8 @@ footer {
   height: 60px;
   color: #fff;
 }
-
 footer p {
   padding: 17px 0 0 0;
   font-size: 12px;
   line-height: 2.25;
-}
+}/*# sourceMappingURL=munchkin.css.map */
